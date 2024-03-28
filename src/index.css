@@ -1,13 +1,43 @@
-body {
+/* #GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**
+* #VARIABLES CSS
+*/
+:root{
+  --primary-color: #fff;
+  --secund-color: #ccc;
+
+  --font-family: 'poppins', sans-serif;
+
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}
+/**
+*  #RESET CSS 
+*/
+*,
+*::after,
+*::before{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--font-family);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(70deg, #ccc, #fff);
 }
+
+a { text-decoration: none; }
+li { list-style: none; }
+img { height: auto; }
