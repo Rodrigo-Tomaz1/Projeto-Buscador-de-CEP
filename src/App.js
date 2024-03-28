@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
-import "./app.css";
+import "./css/app.css";
 
 import api from "./services/api";
 
@@ -43,9 +43,9 @@ function App() {
       <main>
         <h2>CEP: {cep.cep}</h2>
         <span>Rua: {cep.logradouro}</span>
-        <span>Complemento: {cep.complemento} </span>
         <span>Bairro: {cep.bairro}</span>
         <span>Cidade: {cep.localidade} </span>
+        <span>Complemento: {cep.complemento} </span>
       </main>
     </div>
   );
